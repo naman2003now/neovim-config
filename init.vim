@@ -29,32 +29,31 @@ autocmd BufWritePre *.js Prettier
 autocmd BufWritePre *.html Prettier
 autocmd BufWritePre *.css Prettier
 
+" Terminal Normal Mode
 tnoremap <Esc> <C-\><C-n>
+tnoremap <C-[> <C-\><C-n>
 
+" FZF Git Search
 noremap <C-p> :GFiles<CR>
 
-"Move between windows
-" noremap <Left> <C-w>H
-" noremap <Right> <C-w>L
-" noremap <Down> <C-w>J
-" noremap <Up> <C-w>K
-
+" Window Navigation
 noremap sh <C-w>h
 noremap sj <C-w>j
 noremap sk <C-w>k
 noremap sl <C-w>l
 
+" Window Splitting
 noremap sv <C-w>v
 noremap ss <C-w>s
 
-
+" Window resizing
 noremap s< <C-w><
 noremap s> <C-w>>
 noremap s- <C-w>-
 noremap s+ <C-w>+
-
 noremap s= <C-w>=
 
+" Tab Utilities
 noremap sn :tabnew<CR>
 noremap [t :tabprevious<CR>
 noremap ]t :tabnext<CR>
