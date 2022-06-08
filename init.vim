@@ -33,6 +33,9 @@ autocmd BufWritePre *.css Prettier
 tnoremap <Esc> <C-\><C-n>
 tnoremap <C-[> <C-\><C-n>
 
+" Open Terminal
+noremap st :terminal<CR>
+
 " FZF Git Search
 noremap <C-p> :GFiles<CR>
 
