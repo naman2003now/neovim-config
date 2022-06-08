@@ -45,6 +45,12 @@ noremap sj <C-w>j
 noremap sk <C-w>k
 noremap sl <C-w>l
 
+" Window movement
+noremap sH <C-w>H
+noremap sJ <C-w>J
+noremap sK <C-w>K
+noremap sL <C-w>L
+
 " Window Splitting
 noremap sv <C-w>v
 noremap ss <C-w>s
