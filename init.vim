@@ -38,6 +38,7 @@ noremap st :terminal<CR>
 
 " FZF Git Search
 noremap <C-p> :GFiles<CR>
+noremap <C-b> :Files<CR>
 
 " Window Navigation
 noremap sh <C-w>h
