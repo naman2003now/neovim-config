@@ -51,6 +51,10 @@ noremap sJ <C-w>J
 noremap sK <C-w>K
 noremap sL <C-w>L
 
+" Window swapping
+noremap sr <C-w>r
+noremap sR <C-w>R
+
 " Window Splitting
 noremap sv <C-w>v
 noremap ss <C-w>s
@@ -67,3 +71,6 @@ noremap sn :tabnew<CR>
 noremap [t :tabprevious<CR>
 noremap ]t :tabnext<CR>
 
+" Buffer Navigation
+noremap ]b :bnext<CR>
+noremap [b :bprevious<CR>
