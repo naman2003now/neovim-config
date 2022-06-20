@@ -26,6 +26,7 @@ set nowrap
 autocmd BufWritePre *.c ClangFormat
 autocmd BufWritePre *.cpp ClangFormat
 autocmd BufWritePre *.js Prettier
+autocmd BufWritePre *.ts Prettier
 autocmd BufWritePre *.html Prettier
 autocmd BufWritePre *.css Prettier
 
