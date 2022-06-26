@@ -8,6 +8,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/fzf.vim'
 	Plug 'airblade/vim-rooter'
 	Plug 'rhysd/vim-clang-format'
+	Plug 'maxmellon/vim-jsx-pretty'
+	Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
