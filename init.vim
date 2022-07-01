@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-	Plug 'morhetz/gruvbox'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'chrisbra/vim-commentary'
 " Plug 'preservim/nerdtree'
@@ -8,17 +7,29 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
 	Plug 'rhysd/vim-clang-format'
-	Plug 'sheerun/vim-polyglot'
 	Plug 'airblade/vim-gitgutter'
+
+" Visual Plugines
+
+	Plug 'ayu-theme/ayu-vim'
+	Plug 'morhetz/gruvbox'
+	Plug 'joshdick/onedark.vim'
+	Plug 'sheerun/vim-polyglot'
+" Plug 'sickill/vim-monokai'
+" Plug 'Rigellute/shades-of-purple.vim'
 
 call plug#end()
 
+set termguicolors     " enable true colors support
+
+colorscheme onedark
+
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
+source $HOME/.config/nvim/syntax-highlighting.vim
 
-colorscheme gruvbox
 
-set nu
+set rnu
 syntax on
 set tabstop=2
 set shiftwidth=2
@@ -79,9 +90,3 @@ noremap ]t :tabnext<CR>
 noremap ]b :bnext<CR>
 noremap [b :bprevious<CR>
 
-" Syntax Highlighting
-highlight Comment cterm=italic
-highlight Statement cterm=italic
-highlight Constant cterm=italic
-highlight PreProc cterm=italic
-highlight Type cterm=italic
