@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
 	Plug 'rhysd/vim-clang-format'
-	Plug 'maxmellon/vim-jsx-pretty'
+	Plug 'sheerun/vim-polyglot'
 	Plug 'airblade/vim-gitgutter'
 
 call plug#end()
@@ -78,3 +78,10 @@ noremap ]t :tabnext<CR>
 " Buffer Navigation
 noremap ]b :bnext<CR>
 noremap [b :bprevious<CR>
+
+" Syntax Highlighting
+highlight Comment cterm=italic
+highlight Statement cterm=italic
+highlight Constant cterm=italic
+highlight PreProc cterm=italic
+highlight Type cterm=italic
