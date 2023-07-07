@@ -6,7 +6,7 @@ function register_plugin(plugin_name, use)
 end
 
 return function(use) 
-  plugins = {"colorscheme", "treesitter", "which-key"}
+  plugins = {"colorscheme", "treesitter", "which-key", "telescope"}
   for _, plugin_name in pairs(plugins) do
     register_plugin(plugin_name, use)
   end
